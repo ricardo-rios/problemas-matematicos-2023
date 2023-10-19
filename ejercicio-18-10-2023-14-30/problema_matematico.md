@@ -70,3 +70,4 @@ $$\begin{align*}
 por lo tanto 
 $$\lim_{\rho \to 0} I(\rho)= 2\pi u(p).$$
 que es lo que queriamos demostrar.
+
