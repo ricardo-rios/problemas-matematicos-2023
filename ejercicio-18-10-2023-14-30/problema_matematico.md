@@ -1,6 +1,8 @@
 # Proyecto II
 **Integrantes:**
+
 Kevin Hernán Hércules Orellana (Carnet: HO15005).
+
 Julio César Cerón Hernández (Carnet: CH14018).
 
 ## Problema matemático.
@@ -16,8 +18,8 @@ Demuestre que $\lim\limits_{\rho \to 0} I(\rho)=2\pi u(p).$
 Antes enunciaremos un teorema que nos servira para la demostración del problema en cuestión.
 
 **Teorema 1 (Tom M. Apostol. Calculo con funciones de una variable, con una introducción al algebra lineal. Volumen I, segunda edición. Capítulo 11, pág 425.)**
-Supongamos que $f_{n} \to f$ uniformemente en un intervalo $[a,b]$ y que cada función $f_{n}$ es continua en $[a,b]$, definamos una sucesión $\{ g_{n} \}$ mediante
-$$g_{n}= \int_{a}^{x} f_{n}(t) ~ dt \qquad \text{si $x \in [a,b]$,}$$
+Supongamos que $f_{n} \to f$ uniformemente en un intervalo $[a,b]$ y que cada función $f_{n}$ es continua en $[a,b]$, definamos una sucesión $\{ g_{n} \}$ con $x \in [a,b]$ mediante
+$$g_{n}= \int_{a}^{x} f_{n}(t) ~ dt$$
 y pongamos 
 $$g(x)= \int_{a}^{x} f(t) ~ dt.$$
 
@@ -35,34 +37,34 @@ con lo cual $\partial B_{\rho}$ es una circunferencia en $\mathbb{R}^{2}$. Enton
 $$(x-h)^{2}+(y-k)^{2}= \rho ^{2}$$
 donde  $p=(h,k) \in \Omega$ es el centro de la circunferencia. Sabemos que haciendo
 $$x-h= \rho \cos(t) \Rightarrow x(t)=h+\rho \cos(t)$$
-$$y-k= \rho \sen(t) \Rightarrow y(t)= k+ \rho \sen(t)$$
+$$y-k= \rho \sin(t) \Rightarrow y(t)= k+ \rho \sin(t)$$
 
 con lo cual tenemos que una parametrización de $\partial B_{\rho}$ es
-$$\gamma(t)=(h+\rho \cos(t), k+ \rho \sen(t)), \quad 0 \leq t \leq 2\pi$$
+$$\gamma(t)=(h+\rho \cos(t), k+ \rho \sin(t)), \quad 0 \leq t \leq 2\pi$$
 Además
-$$\gamma^{\prime}(t)=(- \rho \sen(t), \rho \cos(t)) $$
+$$\gamma^{\prime}(t)=(- \rho \sin(t), \rho \cos(t)) $$
 
-$$\Rightarrow ||\gamma^{\prime}(t)|| = \sqrt{(-\rho \sen(t))^{2}+(\rho \cos(t))^{2}} = \rho \sqrt{\sen^{2}(t)+\cos^{2}(t)}= \rho$$
+$$\Rightarrow ||\gamma^{\prime}(t)|| = \sqrt{(-\rho \sin(t))^{2}+(\rho \cos(t))^{2}} = \rho \sqrt{\sin^{2}(t)+\cos^{2}(t)}= \rho$$
 
 Entonces tenemos
 
-$\begin{align*}
+\begin{align*}
     \int_{\partial B_{\rho}} u ~ ds &= \int_{0}^{2\pi} u(\gamma(t)) ||\gamma^{\prime}(t)|| ~ dt\\
     &= \int_{0}^{2\pi} u(\gamma(t)) \rho ~ dt\\
     &= \rho \int_{0}^{2\pi} u(\gamma(t)) ~ dt.
-\end{align*}$
+\end{align*}
 
 Con lo cual
-$\begin{align*}
+\begin{align*}
     \lim_{\rho \to 0} I(\rho)&= \lim_{\rho \to 0} \dfrac{1}{\rho} \int_{\partial B_{\rho}} u ~ ds\\
     &= \lim_{\rho \to 0} \dfrac{\rho}{\rho} \int_{0}^{2\pi} u(\gamma(t)) ~ dt \hspace{4cm} \text{(sustituyendo $\int_{\partial B_{\rho}} u ~ ds$) }\\
     &= \lim_{\rho \to 0} \int_{0}^{2\pi} u(\gamma(t)) ~ dt\\
     &=  \int_{0}^{2\pi} \lim_{\rho \to 0} u(\gamma(t)) ~ dt\\
-    &= \int_{0}^{2\pi} \lim_{\rho \to 0} u(h+\rho \cos(t), k+ \rho \sen(t)) ~ dt\\
+    &= \int_{0}^{2\pi} \lim_{\rho \to 0} u(h+\rho \cos(t), k+ \rho \sin(t)) ~ dt\\
     &= \int_{0}^{2\pi} u(h,k) ~ dt \hspace{5cm} \text{ (ya que $u$ es de clase $C^{2}$)}\\
     &= \int_{0}^{2\pi} u(p) ~ dt\\
     &= u(p) \int_{0}^{2\pi} ~ dt= 2\pi u(p).
-\end{align*}$
+\end{align*}
 
 por lo tanto 
 $$\lim_{\rho \to 0} I(\rho)= 2\pi u(p).$$
