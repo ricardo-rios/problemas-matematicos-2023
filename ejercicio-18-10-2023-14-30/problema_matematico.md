@@ -18,7 +18,7 @@ Demuestre que $\lim\limits_{\rho \to 0} I(\rho)=2\pi u(p).$
 Antes enunciaremos un teorema que nos servira para la demostración del problema en cuestión.
 
 **Teorema 1 (Tom M. Apostol. Calculo con funciones de una variable, con una introducción al algebra lineal. Volumen I, segunda edición. Capítulo 11, pág 425.)**
-Supongamos que $f_{n} \to f$ uniformemente en un intervalo $[a,b]$ y que cada función $f_{n}$ es continua en $[a,b]$, definamos una sucesión $\{ g_{n} \}$ con $x \in [a,b]$ mediante
+Supongamos que $f_{n} \to f$ uniformemente en un intervalo $[a,b]$ y que cada función $f_{n}$ es continua en $[a,b]$, definamos una sucesión \{ $g_{n}$ \} con $x \in [a,b]$ mediante
 $$g_{n}= \int_{a}^{x} f_{n}(t) ~ dt$$
 y pongamos 
 $$g(x)= \int_{a}^{x} f(t) ~ dt.$$
@@ -70,4 +70,3 @@ $$\begin{align*}
 por lo tanto 
 $$\lim_{\rho \to 0} I(\rho)= 2\pi u(p).$$
 que es lo que queriamos demostrar.
-
