@@ -21,7 +21,7 @@ $=\langle x+y, x+y \rangle + \langle x-y,x-y \rangle$
 
 $=(\langle x,x+y \rangle+\langle y,x+y \rangle)+(\langle x,x-y \rangle+\langle -y,x-y\rangle)$
 
-$=(\langle x,x \rangle +\langle x,y\rangle+ \langle y,x\rangle+\langle y,y \rangle)+(\langle x,x \rangle +\langle x,-y \rangle+\langle -y,x \rangle+ \langle -y,y\rangle)$
+$=(\langle x,x \rangle +\langle x,y\rangle+ \langle y,x\rangle+\langle y,y \rangle)+(\langle x,x \rangle +\langle x,-y \rangle+\langle -y,x \rangle+ \langle -y,-y\rangle)$
 
 $=(\lVert x \rVert^2+\langle x,y\rangle+ \langle y,x\rangle+\lVert y \rVert^2)+(\lVert x \rVert^2-\langle x,y\rangle- \langle y,x\rangle+\lVert y \rVert^2)$
 
