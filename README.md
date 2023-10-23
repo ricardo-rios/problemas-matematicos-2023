@@ -4,3 +4,5 @@ Problemas matematicos
 
 
 [*Teorema del Valor medio para Integrales*](problema-20-10-2023-10-43/teorema.md)
+
+[*Cálculo del límite de la función $I(\rho)$ a lo largo de la frontera de una bola cerrada de radio $\rho$*](https://github.com/ricardo-rios/problemas-matematicos-2023/blob/main/ejercicio-18-10-2023-14-30/problema_matematico.md)
